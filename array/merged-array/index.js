@@ -3,8 +3,6 @@ const mergeSortedArrays = (firstArray, secondArray) => {
   let array1Item = firstArray[0];
   let array2Item = secondArray[0];
 
-  console.log(array1Item);
-
   let i = 1;
   let j = 1;
 
