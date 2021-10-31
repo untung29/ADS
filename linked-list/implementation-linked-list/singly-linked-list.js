@@ -118,6 +118,18 @@ class LinkedList {
 
     this.length--;
   }
+
+  reverse() {
+    let prev = null;
+    while (this.head !== null) {
+      let next = this.head.next;
+      this.head.next = prev;
+      prev = this.head;
+      this.head = next;
+    }
+
+    this.head = prev;
+  }
 }
 
 const myLinkedList = new LinkedList(10);
@@ -128,6 +140,7 @@ myLinkedList.append(16);
 myLinkedList.insert(0, 2);
 
 // myLinkedList.insert(1, 2);
-myLinkedList.remove(0);
+myLinkedList.reverse();
+// myLinkedList.remove(0);
 
 console.log(myLinkedList.printList());
