@@ -44,5 +44,3 @@ newArray.push("Me");
 newArray.push("nice");
 
 newArray.delete(2);
-
-console.log(newArray);

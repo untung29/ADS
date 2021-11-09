@@ -119,16 +119,24 @@ class LinkedList {
     this.length--;
   }
 
-  reverse() {
-    let prev = null;
-    while (this.head !== null) {
-      let next = this.head.next;
-      this.head.next = prev;
-      prev = this.head;
-      this.head = next;
+  reverse(next) {
+    // 1. Iterative Approach
+    // let prev = null;
+    // while (this.head !== null) {
+    //   let next = this.head.next;
+    //   this.head.next = prev;
+    //   prev = this.head;
+    //   this.head = next;
+    // }
+    // this.head = prev;
+    // 2. Recursion Approach
+    if (this.head === null) {
+      return;
     }
 
-    this.head = prev;
+    if (this.head.next === null) {
+      
+    }
   }
 }
 
