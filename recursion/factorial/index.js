@@ -2,9 +2,8 @@
 // Base Case: number === 0;
 // Recursive Case: number * (number - 1)
 function findFactorialRecursive(number) {
-  let answer = 1;
-  if (number === 0) {
-    return answer;
+  if (number === 2) {
+    return 2;
   }
 
   return number * findFactorialRecursive(number - 1);
@@ -22,3 +21,5 @@ function findFactorialIterative(number) {
   }
   return answer;
 }
+
+console.log(findFactorialRecursive(5));
