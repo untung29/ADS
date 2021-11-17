@@ -6,7 +6,6 @@ function isSentencePalindrome(sentence) {
   let newSentence = sentence.replaceAll(" ", "");
   newSentence = newSentence.replaceAll(/[.,@'!:]/g, "");
   newSentence = newSentence.toLowerCase();
-  console.log(newSentence);
 
   // Compare left and right until left === right
   for (let i = 0; i < newSentence.length; i++) {
