@@ -1,3 +1,4 @@
+// Space Complexity: O(1) and Time Complexity: O(n)
 function reverseStringRecursive(start, end, list) {
   if (start >= end) {
     return list;
