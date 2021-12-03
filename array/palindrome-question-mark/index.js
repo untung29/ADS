@@ -2,7 +2,7 @@ const palindromeQuestionMark = S => {
   const arrayOfString = S.split("");
 
   // ? ? -> pass the palindrome, just assign any random letter
-  // ? a -> pass the palindrome, just assign the ? with any random letter
+  // ? a -> pass the palindrome, just assign the ? with 'a'
   // a b -> not pass the palindrome
 
   for (let i = 0; i < arrayOfString.length; i++) {
@@ -18,5 +18,10 @@ const palindromeQuestionMark = S => {
     }
   }
 
-  return arrayOfString.reverse().join("") === arrayOfString.join("") ? arrayOfString.join("") : "NO";
+  // Join it back without the '?'
+  S = arrayOfString.join("");
+
+  return arrayOfString.reverse().join("") === S ? arrayOfString.join("") : "NO";
 };
+
+// console.log(palindromeQuestionMark("w??s?a??w"));
